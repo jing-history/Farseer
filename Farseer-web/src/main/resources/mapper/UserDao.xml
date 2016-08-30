@@ -7,7 +7,7 @@
         FROM _user
         WHERE
         user_phone= #{userPhone} limit 1
-    </select>
+    </select>-->
 
     <select id="queryAll" resultType="User">
         SELECT *
@@ -17,7 +17,7 @@
     </select>
 
 
-    <update id="addScore">
+    <!--<update id="addScore">
         UPDATE _user
         SET
         score = score + #{add}
