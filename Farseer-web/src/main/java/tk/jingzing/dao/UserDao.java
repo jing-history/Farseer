@@ -25,4 +25,12 @@ public interface UserDao {
      * 增加积分
      */
     void addScore(int i);
+
+    /**
+     * 根据手机号查询用户对象
+     *
+     * @param userPhone
+     * @return
+     */
+    User queryByPhone(long userPhone);
 }
