@@ -20,4 +20,9 @@ public interface UserDao {
      * @return
      */
     List<User> queryAll(@Param("offset") int offset, @Param("limit") int limit);
+
+    /**
+     * 增加积分
+     */
+    void addScore(int i);
 }

@@ -17,10 +17,10 @@
     </select>
 
 
-    <!--<update id="addScore">
+    <update id="addScore">
         UPDATE _user
         SET
         score = score + #{add}
-    </update>-->
+    </update>
 
 </mapper>
