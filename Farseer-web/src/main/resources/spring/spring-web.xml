@@ -14,6 +14,23 @@
     <!-- 激活组件扫描功能,扫描aop的相关组件组件 -->
     <context:component-scan base-package="tk.jingzing.aop"/>
 
+    <!-- 配置拦截器 -->
+    <mvc:interceptors>
+        <!-- 多个拦截器，按顺序执行 -->
+        <mvc:interceptor>
+            <mvc:mapping path="/my"/> <!-- 表示拦截所有的url包括子url路径 -->
+            <bean class="tk.jingzing.interceptor.MyHandlerInterceptor"/>
+        </mvc:interceptor>
+       <!-- <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="ssm.interceptor.HandlerInterceptor2"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="ssm.interceptor.HandlerInterceptor3"/>
+        </mvc:interceptor>-->
+    </mvc:interceptors>
+
     <!-- 启动对@AspectJ注解的支持 -->
     <aop:aspectj-autoproxy proxy-target-class="true"/>
 
