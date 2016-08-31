@@ -19,7 +19,7 @@
         <!-- 多个拦截器，按顺序执行 -->
         <mvc:interceptor>
             <mvc:mapping path="/my"/> <!-- 表示拦截所有的url包括子url路径 -->
-            <bean class="tk.jingzing.interceptor.MyHandlerInterceptor"/>
+            <bean class="tk.jingzing.config.MyHandlerInterceptor"/>
         </mvc:interceptor>
        <!-- <mvc:interceptor>
             <mvc:mapping path="/**"/>

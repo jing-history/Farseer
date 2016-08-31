@@ -1,4 +1,4 @@
-package tk.jingzing.interceptor;
+package tk.jingzing.config;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
